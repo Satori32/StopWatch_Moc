@@ -20,7 +20,7 @@ public:
 		return true;
 	}
 	template<class T = std::chrono::milliseconds>
-	T Result() {
+	T Result() {//stop(); first
 		return std::chrono::duration_cast<T>(E - S);
 	}
 	template<class T = std::chrono::milliseconds>
